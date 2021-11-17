@@ -1,0 +1,42 @@
+.auth {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+  // height: 100%;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.auth__link {
+  @extend %link;
+  color: $primary-text-color;
+
+  &__link:hover,
+  &__link:focus {
+    @extend %link:hover;
+  }
+}
+
+.auth__item {
+  & + .auth__item {
+    margin-left: 50px;
+  }
+}
+
+.auth__link {
+  & > .auth__icon {
+    fill: $extra-text-color;
+    margin-right: 10px;
+
+    transition: fill 250ms $timing-function;
+  }
+}
+
+.auth__icon {
+  .auth__link:hover > &,
+  .auth__link:focus > & {
+    fill: $accent-color;
+  }
+}

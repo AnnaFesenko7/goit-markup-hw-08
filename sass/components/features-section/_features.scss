@@ -1,0 +1,46 @@
+.card-set {
+  @extend %leftedFlex;
+}
+
+.features__title {
+  @extend %visually-hidden;
+}
+
+.card-set__item {
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.card-set__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+.card-set__text {
+  @extend %text;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $extra-text-color;
+}
+
+.card-set__thumb {
+  display: flex;
+  padding: 0;
+  height: 120px;
+  background-color: $buttons-color;
+  margin-bottom: 30px;
+}
+
+.card-set__icon {
+  display: block;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+}

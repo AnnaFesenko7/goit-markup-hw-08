@@ -1,0 +1,45 @@
+.team {
+  background-color: $buttons-color;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  padding-bottom: 94px;
+}
+.team__title {
+  @extend %section-title;
+}
+
+.team__list {
+  @include centeredFlex(space-between);
+  @extend %section-title;
+}
+
+.team__card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team__thumb {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $extra-title-color;
+  border-bottom: 1px solid $buttons-color;
+  border-left: 1px solid $buttons-color;
+  border-right: 1px solid $buttons-color;
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.team__post {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: $extra-text-color;
+}

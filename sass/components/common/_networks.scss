@@ -1,0 +1,48 @@
+.networks {
+  @include centeredFlex(space-between);
+  width: 206px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.networks__item {
+  display: block;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  padding: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.networks__link {
+  width: 100%;
+  height: 100%;
+
+  @include centeredFlex();
+
+  border-radius: 50%;
+  background-color: $extra-title-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  transition: background-color 250ms $timing-function;
+}
+
+.networks__icon {
+  fill: $icon-color;
+
+  .networks__link:hover &,
+  .networks__link:focus & {
+    fill: $extra-title-color;
+  }
+  align-items: center;
+
+  transition: fill 250ms $timing-function;
+}

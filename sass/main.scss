@@ -1,0 +1,30 @@
+@import "./utile/variables";
+@import "./utile/placeholders";
+
+@import "./components/common/common-styles";
+@import "./components/common/logo";
+@import "./components/common/networks";
+@import "./components/common/menu-button";
+
+@import "./components/page-header/site-nav";
+@import "./components/page-header/header";
+@import "./components/page-header/auth";
+
+@import "./components/hero-section/hero";
+
+@import "./components/clients-section/clients";
+
+@import "./components/features-section/features";
+
+@import "./components/modal-window/modal-form";
+@import "./components/modal-window/modal-checkbox";
+
+@import "./components/team-section/team";
+
+@import "./components/projects-section/projects";
+
+@import "./components/portfolio/overlay";
+@import "./components/portfolio/portfolio";
+
+@import "./components/page-footer/footer";
+@import "./components/page-footer/footer-form";
