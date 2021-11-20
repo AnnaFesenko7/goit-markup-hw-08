@@ -1,0 +1,90 @@
+.menu-container {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  padding: 48px 40px;
+  text-align: center;
+
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 480px;
+  max-height: 796px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.menu__nav {
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  & .link {
+    color: #212121;
+  }
+  & .link--current {
+    color: #2196f3;
+  }
+}
+
+.menu__auth--tel {
+  font-weight: 500;
+  font-size: 7vw;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.menu__auth--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+
+  margin-top: 32px;
+}
+.menu__networks {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__networks--item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+
+  a {
+    color: inherit;
+  }
+}
