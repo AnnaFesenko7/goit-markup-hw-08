@@ -11,16 +11,27 @@
   @media screen and (max-width: 767px) {
     display: inline-flex;
   }
+}
 
-  .menu-container & {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
+.menu-toggle-close {
+  display: block;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    border: none;
   }
 }
 
-.menu-toggle:hover .icon-menu {
+.icon-close,
+.icon-menu {
+  fill: $primary-text-color;
+}
+
+.menu-toggle:hover .icon-menu,
+.menu-toggle:hover .icon-close {
   fill: $accent-color;
 }

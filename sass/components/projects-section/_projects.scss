@@ -1,3 +1,9 @@
+.projects {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .projects__title {
   @extend %section-title;
 }
