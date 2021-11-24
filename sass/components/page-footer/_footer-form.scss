@@ -13,6 +13,8 @@
   @media screen and (min-width: 1200px) {
     width: 570px;
     margin-left: 93px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -26,6 +28,8 @@
     height: 50px;
     margin-top: 20px;
     flex-direction: row;
+    width: 100%;
+    width: 570px;
   }
 }
 
@@ -75,6 +79,9 @@ textarea::placeholder {
   height: 100%;
   margin-top: 20px;
   margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 .subscription__button {
   width: 100%;

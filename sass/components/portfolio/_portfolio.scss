@@ -1,10 +1,20 @@
 .portfolio {
   padding-bottom: 94px;
 }
-.button-set {
-  @include centeredFlex;
 
+.button-set {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 32px;
+  padding-right: 103px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    padding-right: 0;
+    justify-content: center;
+  }
 }
 
 .button-set__item {
@@ -14,6 +24,7 @@
 }
 
 .button-set__button {
+  margin-top: 15px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -31,6 +42,10 @@
 
   transition: box-shadow 250ms $timing-function,
     background-color 250ms $timing-function, color 250ms $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .button-set__button:hover,
@@ -62,20 +77,33 @@
 }
 
 .portfolio__list {
-  flex-wrap: wrap;
   display: flex;
-
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  margin-left: -30px;
+  flex-direction: column;
   margin-top: -30px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .project {
-  flex-basis: calc(100% / 3-30px);
-  margin-left: 30px;
   margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 60px);
+  }
 }
 
 .project__link:hover,

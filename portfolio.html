@@ -50,7 +50,70 @@
             </li>
 
         </ul>
+
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg aria-label="Переключатель мобильного меню" width="40" height="40">
+                <use class="icon-menu" href="./img/symbol-defs.svg#icon-menu_mob"></use>
+            </svg>
+        </button>
     </div>
+    <!-- mobile menu -->
+    
+    
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle menu-toggle-close js-close-menu">
+            <svg aria-label="Переключатель мобильного меню" width="40" height="40">
+                <use class="icon-close" href="./img/symbol-defs.svg#icon-close_mob"></use>
+            </svg>
+        </button>
+        <ul class="menu__nav">
+            <li class="menu__item">
+                <a href="" class="link">Студия</a>
+            </li>
+            <li class="menu__item">
+                <a href="./portfolio.html" class="link--current">Портфолио</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="link">Контакты</a>
+            </li>
+        </ul>
+    
+        <div class="menu__contacts">
+            <ul class="menu__auth">
+    
+                <li class="menu__auth--tel">
+                    <a href="tell:+380961111111" class="menu__auth--tel">
+    
+                        +38 096 111 11 11
+                    </a>
+                </li>
+    
+                <li class="menu__auth--mail">
+                    <a href="mailto:info@devstudio.com" class="menu__auth--mail">
+    
+                        info@devstudio.com
+                    </a>
+                </li>
+    
+            </ul>
+    
+            <ul class="menu__networks">
+                <li class="menu__networks--item">
+                    <a href="">Instagram</a>
+                </li>
+                <li class="menu__networks--item">
+                    <a href="">Twitter</a>
+                </li>
+                <li class="menu__networks--item">
+                    <a href="">Facebook</a>
+                </li>
+                <li class="menu__networks--item">
+                    <a href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
 
 </header>
@@ -87,7 +150,20 @@
                 <a href="" class="project__link">
                    
                     
-                    <img src="./img/img-portf1.jpg" alt="Технокряк" >
+                    <img 
+                    loading='lazy'
+                    srcset="
+                    ./img/proj1-370@1x.jpg 370w,
+                    ./img/proj1-450@1x.jpg 450w,
+                    ./img/proj1-740@2x.jpg 740w,
+                    ./img/proj1-900@2x.jpg 900w,
+                    "
+
+                    src="./img/proj1-450@1x.jpg" alt="Технокряк" height="294"
+                    sizes="(min-width:1200px) 33.33vw,
+                    (min-width:768px) 50vw, 100vw"
+                     />
+                     
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -113,7 +189,16 @@
             <li class="project">
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf2.jpg" alt="Постер New Orlean vs Golden Star">
+                    <img loading='lazy' srcset="
+                                        ./img/proj2-370@1x.jpg 370w,
+                                        ./img/proj2-450@1x.jpg 450w,
+                                        ./img/proj2-740@2x.jpg 740w,
+                                        ./img/proj2-900@2x.jpg 900w,
+                                        " src="./img/proj2-450@1x.jpg" alt="Постер New Orlean vs Golden Star" 
+                                        sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+
+                    
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -138,7 +223,15 @@
 
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf3.jpg" alt="Inspiration has no Borders">
+                    <img loading='lazy' srcset="
+                                        ./img/proj3-370@1x.jpg 370w,
+                                        ./img/proj3-450@1x.jpg 450w,
+                                        ./img/proj3-740@2x.jpg 740w,
+                                        ./img/proj3-900@2x.jpg 900w,
+                                        " src="./img/proj3-450@1x.jpg" alt="Inspiration has no Borders" sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+
+                   
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -162,7 +255,17 @@
             <li class="project">
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf4.jpg" alt="Проект Prime">
+                    <img loading='lazy' srcset="
+                                        ./img/proj4-370@1x.jpg 370w,
+                                        ./img/proj4-450@1x.jpg 450w,
+                                        ./img/proj4-740@2x.jpg 740w,
+                                        ./img/proj4-900@2x.jpg 900w,
+                                        " 
+                                        src="./img/proj4-450@1x.jpg" alt="Проект Prime" 
+                                        sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+
+                   
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -186,7 +289,14 @@
             <li class="project">
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf5.jpg" alt="Проект Boxes">
+                    <img loading='lazy' srcset="
+                                        ./img/proj5-370@1x.jpg 370w,
+                                        ./img/proj5-450@1x.jpg 450w,
+                                        ./img/proj5-740@2x.jpg 740w,
+                                        ./img/proj5-900@2x.jpg 900w,
+                                        " src="./img/proj5-450@1x.jpg" alt="Проект Boxes" sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+              
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -210,7 +320,15 @@
             <li class="project">
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf6.jpg" alt="Inspiration has no Borders">
+                    <img loading='lazy' srcset="
+                                        ./img/proj6-370@1x.jpg 370w,
+                                        ./img/proj6-450@1x.jpg 450w,
+                                        ./img/proj6-740@2x.jpg 740w,
+                                        ./img/proj6-900@2x.jpg 900w,
+                                        " src="./img/proj6-450@1x.jpg" alt="Inspiration has no Borders" sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+
+                    
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -234,7 +352,15 @@
             <li class="project">
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf7.jpg" alt="Издание Limited Edition">
+                    <img loading='lazy' srcset="
+                                        ./img/proj7-370@1x.jpg 370w,
+                                        ./img/proj7-450@1x.jpg 450w,
+                                        ./img/proj7-740@2x.jpg 740w,
+                                        ./img/proj7-900@2x.jpg 900w,
+                                        " 
+                                        src="./img/proj7-450@1x.jpg" alt="Издание Limited Edition" sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -259,7 +385,16 @@
             <li class="project">
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf8.jpg" alt="Проект LAB">
+                    <img loading='lazy' srcset="
+                                        ./img/proj8-370@1x.jpg 370w,
+                                        ./img/proj8-450@1x.jpg 450w,
+                                        ./img/proj8-740@2x.jpg 740w,
+                                        ./img/proj8-900@2x.jpg 900w,
+                                        " src="./img/proj8-450@1x.jpg" alt="Проект LAB" 
+                                        sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+
+                    
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -283,7 +418,15 @@
             <li class="project">
                 <a href="" class="project__link">
 
-                    <img src="./img/img-portf9.jpg" alt="Growing Business">
+                    <img loading='lazy' srcset="
+                                        ./img/proj9-370@1x.jpg 370w,
+                                        ./img/proj9-450@1x.jpg 450w,
+                                        ./img/proj9-740@2x.jpg 740w,
+                                        ./img/proj9-900@2x.jpg 900w,
+                                        " src="./img/proj9-450@1x.jpg" alt="Growing Business" sizes="(min-width:1200px) 33.33vw,
+                                        (min-width:768px) 50vw, 100vw" />
+
+                   
                     <div class="overlay">
                         <div class="overlay__thumb">
                             <p class="overlay__text">
@@ -386,7 +529,8 @@
                 </div>
             </div>
         </footer>
-        
+
+        <script defer src="js/mobile-menu.js"></script>
         </body>
         
         </html>
