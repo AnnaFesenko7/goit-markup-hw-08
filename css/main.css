@@ -562,7 +562,7 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -574,37 +574,37 @@ header .container {
 }
 
 .clients__list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -40px;
+  margin-left: -30px;
 }
 
 @media screen and (min-width: 1200px) {
   .clients__list {
     flex-wrap: nowrap;
-    height: 92px;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 
 .clients__item {
-  width: 100%;
-  height: 100%;
-  flex-basis: calc(100% / 2 - 30px);
+  height: 92px;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 20px;
+  flex-basis: calc(100% / 2 - 30px);
 }
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 226px;
     flex-basis: calc(100% / 3 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
+    margin-top: 0;
   }
 }
 
@@ -962,8 +962,12 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 60px;
-  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1023,6 +1027,7 @@ textarea {
   }
   .team__card .team__card + .team__card {
     margin-left: 30px;
+    margin-top: 0;
   }
 }
 
@@ -1270,34 +1275,16 @@ textarea {
 }
 
 .footer {
-  height: 603px;
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #2f303a;
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    max-width: 768px;
-    height: 463px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    max-width: 1600px;
-    height: 252px;
-  }
 }
 
 .footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
 }
 
@@ -1305,7 +1292,7 @@ textarea {
   .footer .container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
   }
 }
@@ -1351,22 +1338,31 @@ textarea {
 
 .footer__contacts {
   text-align: center;
+  font-style: normal;
 }
 
 .footer__contacts:not(:last-child) {
   margin-bottom: 9px;
 }
 
+.footer__address {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-bottom: 0;
+  }
+}
+
 .footer__networks {
   padding: 0;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .footer__networks {
-    margin-left: 165px;
-    margin-top: 5px;
     margin-bottom: 102px;
-    height: 80px;
   }
 }
 
@@ -1419,13 +1415,6 @@ textarea {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__form {
-    padding-left: 166px;
-    padding-right: 153px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer__form {
     width: 570px;
@@ -1454,6 +1443,7 @@ textarea {
 
 .subscription__mail {
   width: 100%;
+  width: 450px;
   height: 100%;
   height: 50px;
 }
@@ -1476,6 +1466,7 @@ textarea {
 
 .subscription__input {
   width: 100%;
+  width: 450px;
   height: 100%;
   background-color: inherit;
 }
