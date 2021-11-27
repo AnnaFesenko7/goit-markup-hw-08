@@ -5,13 +5,15 @@
 .button-set {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: left;
   flex-wrap: wrap;
   margin-bottom: 40px;
   padding-right: 103px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
+    padding-right: 0;
+    justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -23,13 +25,13 @@
 }
 
 .button-set__item {
+  margin-top: 15px;
   & + & {
     margin-left: 8px;
   }
 }
 
 .button-set__button {
-  margin-top: 15px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -101,14 +103,19 @@
   }
 }
 .project {
+  margin-top: 30px;
+  display: flex;
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 60px);
   }
+}
+.project__link {
+  display: flex;
+  flex-direction: column;
 }
 
 .project__link:hover,
@@ -124,4 +131,5 @@
   border-bottom: 1px solid $buttons-color;
   border-left: 1px solid $buttons-color;
   border-right: 1px solid $buttons-color;
+  flex-grow: 1;
 }

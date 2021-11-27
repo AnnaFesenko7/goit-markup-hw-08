@@ -61,9 +61,11 @@
 
   transition: color 250ms $timing-function;
 }
+address {
+  font-style: normal;
+}
 
 .footer__contacts {
-  font-style: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,12 +92,11 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    // margin-left: 165px;
-    // margin-top: 5px;
     margin-bottom: 102px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 
   .networks {
